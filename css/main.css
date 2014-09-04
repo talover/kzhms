@@ -286,6 +286,15 @@ ul li {
   font-size: 9pt;
   border-bottom: 1px solid #757879;
 }
+h1 {
+  color: #274386;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 17.5pt;
+  font-family: "Arial Narrow";
+  margin: 0;
+  letter-spacing: 1.5px;
+}
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -684,12 +693,19 @@ ul li {
 #header .main-container nav ul li {
   display: inline-block;
   vertical-align: top;
+  position: relative;
 }
-#header .main-container nav ul li.line {
+#header .main-container nav ul li:first-child:before {
+  display: none;
+}
+#header .main-container nav ul li:before {
   margin: 6px 5px 0 5px;
   width: 1px;
   background: #e7ba2c;
   height: 10px;
+  display: inline-block;
+  vertical-align: top;
+  content: "";
 }
 #header .main-container nav ul li a {
   color: #fff;
@@ -1537,15 +1553,6 @@ ul li {
 }
 .article-content {
   padding: 67px 10px 0 10px;
-}
-.article-content h2 {
-  color: #274386;
-  text-transform: uppercase;
-  font-weight: normal;
-  font-size: 17.5pt;
-  font-family: "Arial Narrow";
-  margin: 0;
-  letter-spacing: 1.5px;
 }
 @media (max-width: 1600px) {
   #footer:before {
