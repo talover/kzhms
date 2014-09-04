@@ -1,0 +1,118 @@
+.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
+    background-position: @x @y;
+    width: @width;
+    height: @height;
+}
+
+.sprite {
+    background-image: url(spritesheet.png);    background-repeat: no-repeat;
+    display: block;
+
+    &.sprite-1 {
+        .stitches-sprite(-5px, -5px, 23px, 23px);
+    }
+
+    &.sprite-10 {
+        .stitches-sprite(-38px, -5px, 11px, 14px);
+    }
+
+    &.sprite-11 {
+        .stitches-sprite(-59px, -5px, 12px, 12px);
+    }
+
+    &.sprite-12 {
+        .stitches-sprite(-81px, -5px, 173px, 34px);
+    }
+
+    &.sprite-13 {
+        .stitches-sprite(-5px, -49px, 245px, 92px);
+    }
+
+    &.sprite-14 {
+        .stitches-sprite(-5px, -151px, 34px, 35px);
+    }
+
+    &.sprite-15 {
+        .stitches-sprite(-264px, -5px, 8px, 12px);
+    }
+
+    &.sprite-16 {
+        .stitches-sprite(-59px, -27px, 7px, 12px);
+    }
+
+    &.sprite-17 {
+        .stitches-sprite(-49px, -151px, 28px, 19px);
+    }
+
+    &.sprite-18 {
+        .stitches-sprite(-87px, -151px, 30px, 21px);
+    }
+
+    &.sprite-19 {
+        .stitches-sprite(-127px, -151px, 79px, 22px);
+    }
+
+    &.sprite-2 {
+        .stitches-sprite(-216px, -151px, 23px, 23px);
+    }
+
+    &.sprite-20 {
+        .stitches-sprite(-49px, -184px, 56px, 14px);
+    }
+
+    &.sprite-21 {
+        .stitches-sprite(-282px, -5px, 37px, 104px);
+    }
+
+    &.sprite-22 {
+        .stitches-sprite(-115px, -184px, 195px, 17px);
+    }
+
+    &.sprite-23 {
+        .stitches-sprite(-5px, -211px, 50px, 147px);
+    }
+
+    &.sprite-24 {
+        .stitches-sprite(-260px, -119px, 17px, 48px);
+    }
+
+    &.sprite-25 {
+        .stitches-sprite(-287px, -119px, 8px, 8px);
+    }
+
+    &.sprite-26 {
+        .stitches-sprite(-305px, -119px, 8px, 8px);
+    }
+
+    &.sprite-27 {
+        .stitches-sprite(-5px, -368px, 268px, 12px);
+    }
+
+    &.sprite-3 {
+        .stitches-sprite(-287px, -137px, 23px, 23px);
+    }
+
+    &.sprite-4 {
+        .stitches-sprite(-65px, -211px, 23px, 23px);
+    }
+
+    &.sprite-5 {
+        .stitches-sprite(-98px, -211px, 23px, 23px);
+    }
+
+    &.sprite-6 {
+        .stitches-sprite(-131px, -211px, 23px, 23px);
+    }
+
+    &.sprite-7 {
+        .stitches-sprite(-164px, -211px, 10px, 12px);
+    }
+
+    &.sprite-8 {
+        .stitches-sprite(-184px, -211px, 14px, 12px);
+    }
+
+    &.sprite-9 {
+        .stitches-sprite(-208px, -211px, 9px, 14px);
+    }
+}
