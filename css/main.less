@@ -1,6 +1,7 @@
 @import "jquery.formstyler.css";
 @import "owl.carousel.css";
 @import "slider.css";
+@import "fonts/fonts.css";
 
 html,button,
 input,
@@ -244,11 +245,13 @@ ul {
 
 
 h1 {
-	color: #274386;
-	text-transform: uppercase;
-	font-weight: normal;
-	font-size: 16.5pt;
-	margin: 0;
+    color: #274386;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 16.5pt;
+    letter-spacing: 2.5px;
+    margin: 0;
+    font-family: "Arial Narrow", arial;
 }
 /* ==========================================================================
    Author's custom styles
@@ -2018,6 +2021,175 @@ h1 {
         }
     }
 }// END .personal-cabinet
+
+.registration-cont {
+    padding: 60px 0 100px 0;
+
+    h1 {
+        text-align: center;
+    }
+
+    .registration-info {
+        width: 420px;
+        margin: 15px auto 0 auto;
+        background: #67bfe0; /* Old browsers */
+        /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+        background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY3YmZlMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0ZGE0Y2YiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+        background: -moz-linear-gradient(top,  #67bfe0 0%, #4da4cf 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#67bfe0), color-stop(100%,#4da4cf)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  #67bfe0 0%,#4da4cf 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  #67bfe0 0%,#4da4cf 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  #67bfe0 0%,#4da4cf 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  #67bfe0 0%,#4da4cf 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#67bfe0', endColorstr='#4da4cf',GradientType=0 ); /* IE6-8 */
+        .border-radius(5px);
+        border-bottom: 2px solid rgba(0, 0, 0, 0.55);
+        padding: 32px 10px 44px 10px;
+        text-align: center;
+
+        h3 {
+            color: #fff;
+            font-weight: normal;
+            text-transform: uppercase;
+            font-size: 10pt;
+            margin: 0;
+        }
+
+        span {
+            font-size: 10pt;
+            color: #ffde00;
+            line-height: 1.4;
+            display: block;
+        }
+
+        p {
+            color: #fff;
+            font-size: 10pt;
+            margin: 0;
+            padding-top: 16px;
+
+            a {
+                color: #004b9b;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .registration-form {
+        width: 468px;
+        margin: auto;
+
+        ul {
+            margin: auto;
+            padding-top: 39px;
+            position: relative;
+
+            li {
+                padding-bottom: 10px;
+
+                label {
+                    width: 160px;
+                    color: #004b9b;
+                    font-size: 10pt;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin: 0 10px 0 0;
+                    text-align: right;
+                }
+
+                input[type="text"] ,input[type="password"]{
+                    color: #7b7b7b;
+                    border: 1px solid #cbcbcb;
+                    background: #fff;
+                    width: 185px;
+                    height: 16px;
+                    text-indent: 11px;
+                    font-size: 8pt;
+                    outline: 0;
+
+                    &::-webkit-input-placeholder {
+                       color: #7b7b7b;
+                    }
+
+                    &:-moz-placeholder { /* Firefox 18- */
+                       color: #7b7b7b;  
+                    }
+
+                    &::-moz-placeholder {  /* Firefox 19+ */
+                       color: #7b7b7b;  
+                    }
+
+                    &:-ms-input-placeholder {  
+                       color: #7b7b7b;  
+                    }
+                }
+
+                #mail {
+                    color: #42b9df;
+
+                    &::-webkit-input-placeholder {
+                       color: #42b9df;
+                    }
+
+                    &:-moz-placeholder { /* Firefox 18- */
+                       color: #42b9df;  
+                    }
+
+                    &::-moz-placeholder {  /* Firefox 19+ */
+                       color: #42b9df;  
+                    }
+
+                    &:-ms-input-placeholder {  
+                       color: #42b9df;  
+                    } 
+                }
+            }
+        }
+
+        button[type="submit"] {
+            padding: 0 33px;
+            height: 26px;
+            outline: 0;
+            border:1px solid #765d0c;
+            background: #dfb324; /* Old browsers */
+            /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+            background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RmYjMyNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiZjk1MGMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+            background: -moz-linear-gradient(top,  #dfb324 0%, #bf950c 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dfb324), color-stop(100%,#bf950c)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top,  #dfb324 0%,#bf950c 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top,  #dfb324 0%,#bf950c 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top,  #dfb324 0%,#bf950c 100%); /* IE10+ */
+            background: linear-gradient(to bottom,  #dfb324 0%,#bf950c 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfb324', endColorstr='#bf950c',GradientType=0 ); /* IE6-8 */
+            -webkit-box-shadow: inset 0px 0px 0px 1px #e6c24d;
+            -moz-box-shadow:    inset 0px 0px 0px 1px #e6c24d;
+            box-shadow:         inset 0px 0px 0px 1px #e6c24d;
+            color: #fff;
+            font-weight: bold;
+            font-size: 10pt;
+            .border-radius(5px);
+            margin: 8px 0 0 177px;
+            opacity: 0.9;
+            .transition(0.5s,all);
+            display: block;
+            position: relative;
+            left: -3px;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        .hint {
+            margin: 5px 0 0 177px;
+            font-size: 8pt;
+            color: #7b7b7b;
+        }
+    }
+}// END .registration-block
 
 @media (max-width:1600px) {
     #footer {
