@@ -3,203 +3,390 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>test</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>test</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
-        <link rel="stylesheet" href="css/normalize.min.css">
- <!--        <link rel="stylesheet" href="css/main.css"> -->
+		<link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+<!-- 
+		<link rel="stylesheet/less" type="text/css" href="css/main.less">
+		<script src="js/vendor/less.js" type="text/javascript"></script>
+ -->
+		<!--[if lt IE 9]>
+			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+		<![endif]-->
+		<!--[if gte IE 9]>
+		  <style type="text/css">
+			 * {
+			   filter: none;
+			}
+		  </style>
+		<![endif]-->
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
 
-        <link rel="stylesheet/less" type="text/css" href="css/main.less">
-        <script src="js/vendor/less.js" type="text/javascript"></script>
+		<div id="main">
+			<header id="header">
+				<div class="header-top-layout-full"></div>
+				<div class="header-nav-layout-full"></div>
 
-        <!--[if lt IE 9]>
-            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
-        <![endif]-->
-        <!--[if gte IE 9]>
-          <style type="text/css">
-             * {
-               filter: none;
-            }
-          </style>
-        <![endif]-->
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+				<div class="main-container">
+					<div class="header-top-layout"></div>
+					<div class="header-nav-layout"></div>
 
-        <div id="main">
-            <header id="header">
-                <div class="header-top-layout-full"></div>
-                <div class="header-nav-layout-full"></div>
+					<div class="cont clearfix">
+						<ul class="languages">
+							<li><a class="active" href="#">ru</a></li>
+							<li><a href="#">kz</a></li>
+							<li><a href="#">eng</a></li>
+						</ul>
 
-                <div class="main-container">
-                    <div class="header-top-layout"></div>
-                    <div class="header-nav-layout"></div>
+						<div class="f-left">
+							<a href="index.html"></a>
+							<p>
+								<i></i>
+								страховая компания 
+								<span>Казахмис</span>
+							</p>
+						</div>
 
-                    <div class="cont clearfix">
-                        <ul class="languages">
-                            <li><a class="active" href="#">ru</a></li>
-                            <li><a href="#">kz</a></li>
-                            <li><a href="#">eng</a></li>
-                        </ul>
+						<div class="f-right">
+							<div class="col-left">
+								<form class="form-block">
+									<input type="text" placeholder="введите запрос" />
+									<input type="submit" />
+								</form>
 
-                        <div class="f-left">
-                            <a href="index.html"></a>
-                            <p>
-                                <i></i>
-                                страховая компания 
-                                <span>Казахмис</span>
-                            </p>
-                        </div>
+								<a class="red-btn" href="#">Акции</a>
+							</div>
+							<div class="col-right">
+								<p class="tel">
+									+7 (727) 
+									<span>345 01 25</span>
+								</p>
 
-                        <div class="f-right">
-                            <div class="col-left">
-                                <form class="form-block">
-                                    <input type="text" placeholder="введите запрос" />
-                                    <input type="submit" />
-                                </form>
+								<select>
+									<option>Контакты в регионах</option>
+									<option>Контакты в регионах 1</option>
+									<option>Контакты в регионах 2</option>
+									<option>Контакты в регионах 3</option>
+								</select>
 
-                                <a class="red-btn" href="#">Акции</a>
-                            </div>
-                            <div class="col-right">
-                                <p class="tel">
-                                    +7 (727) 
-                                    <span>345 01 25</span>
-                                </p>
+								<ul class="social">
+									<li class="mr"><a href="#"></a></li>
+									<li class="tw"><a href="#"></a></li>
+									<li class="cm"><a href="#"></a></li>
+									<li class="fb"><a href="#"></a></li>
+									<li class="vk"><a href="#"></a></li>
+									<li class="in"><a href="#"></a></li>
+								</ul>
+							</div>
+						</div>
 
-                                <select>
-                                    <option>Контакты в регионах</option>
-                                    <option>Контакты в регионах 1</option>
-                                    <option>Контакты в регионах 2</option>
-                                    <option>Контакты в регионах 3</option>
-                                </select>
+						<nav>
+							<ul>
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Физические лица</a></li>
+								<li><a href="#">Юридические лица</a></li>
+								<li><a href="#">Выплаты</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">Обратная связь</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header><!--END #header-->
 
-                                <ul class="social">
-                                    <li class="mr"><a href="#"></a></li>
-                                    <li class="tw"><a href="#"></a></li>
-                                    <li class="cm"><a href="#"></a></li>
-                                    <li class="fb"><a href="#"></a></li>
-                                    <li class="vk"><a href="#"></a></li>
-                                    <li class="in"><a href="#"></a></li>
-                                </ul>
-                            </div>
-                        </div>
+			<div id="bread-crumbs-block">
+				<div class="main-container clearfix">
+					<ul class="bread-crumb">
+						<li><a href="index.html">Главная </a></li>
+						<li>>></li>
+						<li>Юридическим лицам</li>
+					</ul>
 
-                        <nav>
-                            <ul>
-                                <li><a href="#">О компании</a></li>
-                                <li><a href="#">Физические лица</a></li>
-                                <li><a href="#">Юридические лица</a></li>
-                                <li><a href="#">Выплаты</a></li>
-                                <li><a href="#">Контакты</a></li>
-                                <li><a href="#">Обратная связь</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-            </header><!--END #header-->
+					<div class="main-breadcrumb-reg clearfix">
+						<ul class="main-breadcrumb">
+							<li class="home"><a href="index.html"><i></i></a></li>
+							<li class="map"><a href="#"><i></i></a></li>
+						</ul><!--.main-breadcrumb-->
 
-            <div id="bread-crumbs-block">
-                <div class="main-container clearfix">
-                    <ul class="bread-crumb">
-                        <li><a href="index.html">Главная </a></li>
-                        <li>>></li>
-                        <li>Юридическим лицам</li>
-                    </ul>
+						<div class="registration-block">
+							<p>Вход в личный кабинет</p>
+							<ul>
+								<li class="enter"><a href="#"><i></i>Войти</a></li>
+								<li class="line"></li>
+								<li class="registration"><a href="#"><i></i>Регистрация</a></li>
+							</ul>
+						</div>
+					</div><!--.main-breadcrumb-reg-->
+				</div>
+			</div><!--END #bread-crumbs-block-->
 
-                    <div class="main-breadcrumb-reg clearfix">
-                        <ul class="main-breadcrumb">
-                            <li class="home"><a href="index.html"><i></i></a></li>
-                            <li class="map"><a href="#"><i></i></a></li>
-                        </ul><!--.main-breadcrumb-->
+			<section class="personal-cabinet main-container">
+				<h1>Личный кабинет</h1>
 
-                        <div class="registration-block">
-                            <p>Вход в личный кабинет</p>
-                            <ul>
-                                <li class="enter"><a href="#"><i></i>Войти</a></li>
-                                <li class="line"></li>
-                                <li class="registration"><a href="#"><i></i>Регистрация</a></li>
-                            </ul>
-                        </div>
-                    </div><!--.main-breadcrumb-reg-->
-                </div>
-            </div><!--END #bread-crumbs-block-->
+				<ul class="personal-cab-tabs clearfix">
+					<li class="active" data-personal-cabinet="#personal-cab-tab-1">Мои покупки</li>
+					<li data-personal-cabinet="#personal-cab-tab-2">Акции</li>
+					<li data-personal-cabinet="#personal-cab-tab-3">Мои данные</li>
+					<li data-personal-cabinet="#personal-cab-tab-4">Выплаты</li>
+				</ul>
 
-            <section class="personal-cabinet main-container">
-                <h1>Личный кабинет</h1>
-            </section><!--END .article-content-->
+				<div id="personal-cab-tab-1" class="personal-cab-tab active">
+					<table class="my-shopping">
+						<thead>
+							<tr>
+								<th>№</th>
+								<th>ВИД <br/>СТРАХОВАНИЯ</th>
+								<th>Срок действия <br/>договора</th>
+								<th>Стоимость <br/> страховки, тг</th>
+								<th>Страховая <br/>сумма, тг.</th>
+								<th>Страховая <br/>выплата, ТГ.</th>
+								<th>Оставшаяся <br/>страховая <br/>сумма, тг.</th>
+								<th></th>
+							</tr>
+						</thead>
 
-        </div><!--END #main-->
+						<tbody>
 
-        <footer id="footer">
-            <div class="main-container">
-                <div class="footer-top-layout"></div>
-                <div class="footer-bottom-layout"></div>
-                <a id="online-consultant" href="#"></a>
+							<tr>
+								<td>1</td>
+								<td>ОГПО ВТС</td>
+								<td>1.01.2014г. - <br/> 1.01.2015г.</td>
+								<td>16000</td>
+								<td>
+									<span class="blue">50 0000</span>
+								</td>
+								<td>50 0000</td>
+								<td>50 0000</td>
+								<td class="day">
+									<span class="red-btn">5 дней</span>
+									<p>
+										осталось до завершения договора страхования
+										<a href="#">продление</a>
+									</p>
+									
+								</td>
+							</tr>
 
-                <div class="cont">
-                    <a class="footer-logo" href="#"></a>
+							<tr>
+								<td>2</td>
+								<td>страхование залогового имущества</td>
+								<td>1.01.2014г. - <br/> 1.01.2015г.</td>
+								<td>16000</td>
+								<td>
+									<span class="blue">50 0000</span>
+								</td>
+								<td>50 0000</td>
+								<td>50 0000</td>
+								<td class="day"></td>
+							</tr>
 
-                    <div class="list-block">
-                        <ul class="help-list">
-                            <li><a href="#">Обратная связь</a></li>
-                            <li><a href="#">Виды стрaхования</a></li>
-                            <li><a href="#">Помощь и справка</a></li>
-                        </ul>
+							<tr>
+								<td>3</td>
+								<td>ОГПО ВТС</td>
+								<td>1.01.2014г. - <br/> 1.01.2015г.</td>
+								<td>16000</td>
+								<td>
+									<span class="blue">50 0000</span>
+								</td>
+								<td>50 0000</td>
+								<td>50 0000</td>
+								<td class="day">
+									<span class="red-btn">20 дней</span>
+									<p>
+										осталось до завершения договора страхования
+										<a href="#">продление</a>
+									</p>
+									
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 
-                        <nav>
-                            <ul>
-                                <li><a href="#">Главная</a></li>
-                                <li><a href="#">О компании</a></li>
-                                <li><a href="#">Контакты</a></li>
-                                <li><a href="#">Расчет стоимости</a></li>
-                                <li><a href="#">Акции</a></li>
-                            </ul>
-                        </nav>
-                    </div>
+				<div id="personal-cab-tab-2" class="personal-cab-tab">
+					<ul class="shares">
 
-                    <ul class="delivery-pay">
-                        <li><a class="delivery" href="#"><i></i>Доставка страховки</a></li>
-                        <li><a class="pay" href="#"><i></i>Оплата страховки</a></li>
-                    </ul>
+						<li>
+							<p>
+								Получи вознаграждение при оформлении полиса обязательного страхования гражданско-правовой ответственности владельцев (далее – ОГПО ВТС) в АО «СК «Казахмыс».
+							</p>
+							<a href="#">подробнее >></a>
+						</li>
 
-                    <p class="copyright">© Казахмыс <br/> все права защищены</p>
-                </div>
-            </div>
-        </footer><!--END #footer-->
+						<li>
+							<p>
+								Получи в подарок договор добровольного страхования автомобильного транспорта при оформлении полиса обязательного страхования гражданско-правовой ответственности владельцев (далее – ОГПО ВТС) в АО «СК «Казахмыc
+							</p>
+							<a href="#">подробнее >></a>
+						</li>
 
-        <div id="consultant">
-            <a id="online-order" href="#"></a>
+						<li>
+							<p>При оформлении ОГПО в г.Астане АО «СК «Казахмыс» дарит Вам талон на прохождение тех. осмотра или до 30 литров бензина.</p>
+							<a href="#">подробнее >></a>
+						</li>
 
-            <a id="insurance-case" href="#"></a>
-        </div>
+						<li class="more"><a href="#">другие акции</a></li>
+					</ul>
+				</div>
+
+				<div id="personal-cab-tab-3" class="personal-cab-tab">
+					<form class="personal-info">
+						<ul>
+
+							<li>
+								<label for="name" >ФИО</label>
+								<input id="name" type="text" placeholder="Иванов Иван Иванович" />
+							</li>
+
+							<li>
+								<label for="tel" >Телефон</label>
+								<input id="tel" type="text" placeholder="+7 (999) 999-99-99" />
+							</li>
+
+							<li>
+								<label for="mail" >E-mail</label>
+								<input id="mail" type="text" placeholder="info@kmic.kz" />
+							</li>
+						</ul>
+
+						<button type="submit">Сохранить</button>
+					</form>
+				</div>
+
+				<div id="personal-cab-tab-4" class="personal-cab-tab">
+					<table class="payments">
+						<thead>
+							<tr>
+								<th>№ договора</th>
+								<th>ВИД СТРАХОВАНИЯ</th>
+								<th>Дата выплаты</th>
+								<th>Сумма выплат, тыс. тг.</th>
+							</tr>
+						</thead>
+							<tbody>
+
+								<tr class="title">
+									<td>
+										696
+									</td>
+									<td colspan="3">
+										Каско
+									</td>
+								</tr>
+
+								<tr>
+									<td colspan="2"></td>
+									<td class="light-gray">11.09.2013г.</td>
+									<td class="gray">73500</td>
+								</tr>
+
+								<tr>
+									<td colspan="2"></td>
+									<td class="gray">16.12.2013г.</td>
+									<td class="light-gray">73500</td>
+								</tr>
+
+								<tr class="title">
+									<td>
+										547
+									</td>
+									<td colspan="3">
+										Страхование недвижимого имущества
+									</td>
+								</tr>
+
+								<tr>
+									<td colspan="2"></td>
+									<td class="light-gray">11.09.2013г.</td>
+									<td class="gray">73500</td>
+								</tr>
+
+								<tr>
+									<td colspan="2"></td>
+									<td class="gray">16.12.2013г.</td>
+									<td class="light-gray">73500</td>
+								</tr>
+							</tbody>
+					</table>
+				</div>
+			</section><!--END .article-content-->
+
+		</div><!--END #main-->
+
+		<footer id="footer">
+			<div class="main-container">
+				<div class="footer-top-layout"></div>
+				<div class="footer-bottom-layout"></div>
+				<a id="online-consultant" href="#"></a>
+
+				<div class="cont">
+					<a class="footer-logo" href="#"></a>
+
+					<div class="list-block">
+						<ul class="help-list">
+							<li><a href="#">Обратная связь</a></li>
+							<li><a href="#">Виды стрaхования</a></li>
+							<li><a href="#">Помощь и справка</a></li>
+						</ul>
+
+						<nav>
+							<ul>
+								<li><a href="#">Главная</a></li>
+								<li><a href="#">О компании</a></li>
+								<li><a href="#">Контакты</a></li>
+								<li><a href="#">Расчет стоимости</a></li>
+								<li><a href="#">Акции</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<ul class="delivery-pay">
+						<li><a class="delivery" href="#"><i></i>Доставка страховки</a></li>
+						<li><a class="pay" href="#"><i></i>Оплата страховки</a></li>
+					</ul>
+
+					<p class="copyright">© Казахмыс <br/> все права защищены</p>
+				</div>
+			</div>
+		</footer><!--END #footer-->
+
+		<div id="consultant">
+			<a id="online-order" href="#"></a>
+
+			<a id="insurance-case" href="#"></a>
+		</div>
 
 
 
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 
-        <script src="js/vendor/jquery.formstyler.min.js"></script>
-        <script src="js/vendor/owl.carousel.min.js"></script>
-        <script src="js/main.js"></script>
+		<script src="js/vendor/jquery.formstyler.min.js"></script>
+		<script src="js/vendor/owl.carousel.min.js"></script>
+		<script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
-    </body>
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+			e.src='//www.google-analytics.com/analytics.js';
+			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+			ga('create','UA-XXXXX-X');ga('send','pageview');
+		</script>
+	</body>
 </html>

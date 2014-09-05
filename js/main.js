@@ -77,8 +77,15 @@ $(document).ready(function() {
 		} else if(num === sync2visible[0]){
 			sync2.trigger("owl.goTo", num-1)
 		}
-		
 	}
+
+	$('.personal-cab-tabs li').click(function(){
+		var personal_cab_tab = $(this).data('personalCabinet');
+
+		$(this).addClass('active').siblings().removeClass('active');
+		$('.personal-cab-tab').removeClass('active');
+		$(personal_cab_tab).addClass('active');
+	});
  
 });
 
