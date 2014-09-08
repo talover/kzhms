@@ -399,7 +399,7 @@
 			<div class="main-container">
 				<div class="footer-top-layout"></div>
 				<div class="footer-bottom-layout"></div>
-				<a id="online-consultant" href="#"></a>
+				<button id="online-consultant" class="popup" href="#online-consultant-popup"></button>
 
 				<div class="cont">
 					<a class="footer-logo" href="#"></a>
@@ -438,14 +438,42 @@
 			<a id="insurance-case" href="#"></a>
 		</div>
 
+		<div id="online-consultant-popup">
+			<div class="popup-title clearfix">
+				<div class="img-block">
+					<img src="img/pic-6.png" alt="">
+				</div>
+				<div class="f-right">
+					<div class="logo"><img src="img/pic-7.png" alt=""></div>
+					<p>On-line консультант</p>
+				</div>
+			</div>
+			<p class="description">
+				Спасибо, что связались с нами! Заполните, пожалуйста, небольшую форму <br/> и нажмите <span>"Начать диалог".</span> 
+			</p>
 
+			<form>
 
+				<div class="row">
+					<label for="consult-name" >Ваше имя:</label>
+					<input id="consult-name" type="text" placeholder="Укажите свое имя " />
+				</div>
+
+				<div class="row">
+					<label for="consult-email">E-mail:</label>
+					<input id="consult-email" type="text" />
+				</div>
+
+				<button type="submit">Начать диалог</button>
+			</form>
+		</div>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 
 		<script src="js/vendor/jquery.formstyler.min.js"></script>
 		<script src="js/vendor/owl.carousel.min.js"></script>
+		<script src="js/vendor/jquery.fancybox.js"></script>
 		<script src="js/main.js"></script>
 
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

@@ -3,6 +3,8 @@ $(document).ready(function() {
  	$('input, select').styler();  
 	$('.article-text').hyphenate();
 
+	/*  -- slired --*/
+
 	var sync1 = $("#sync1");
 	var sync2 = $("#sync2");
  
@@ -52,7 +54,7 @@ $(document).ready(function() {
 		var number = $(this).data("owlItem");
 		sync1.trigger("owl.goTo",number);
 	});
- 
+
 	function center(number){
 		var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
 		var num = number;
@@ -79,6 +81,8 @@ $(document).ready(function() {
 		}
 	}
 
+	/* -- tabs in personal cabinet -- */
+
 	$('.personal-cab-tabs li').click(function(){
 		var personal_cab_tab = $(this).data('personalCabinet');
 
@@ -86,9 +90,21 @@ $(document).ready(function() {
 		$('.personal-cab-tab').removeClass('active');
 		$(personal_cab_tab).addClass('active');
 	});
+
+	/* -- popup -- */
+
+	$('.popup').fancybox({
+		padding: 0,
+		helpers: {
+			overlay: {
+				locked: false
+			}
+		}
+	});
  
 });
 
+/* -- text newline -- */
 $.fn.hyphenate = function() {
 	var all = "[абвгдеёжзийклмнопрстуфхцчшщъыьэюя]",
 		glas = "[аеёиоуыэю\я]",
