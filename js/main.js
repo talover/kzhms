@@ -101,6 +101,29 @@ $(document).ready(function() {
 			}
 		}
 	});
+
+	$('.popup-second').fancybox({
+		padding: 0,
+		helpers: {
+			overlay: {
+				locked: false
+			}
+		},
+		wrapCSS : 'fancybox-popup-second' // add a class selector to the fancybox wrap
+	});
+
+	/*-- calculator tabs --*/
+
+	$('.calculator-tabs .nav-tabs button').click(function(){
+		var calculator_tab = $(this).data('calculatorTab');
+		
+		$('.calculator-tabs').removeClass('active');
+		$(calculator_tab).addClass('active');
+
+
+
+	});
+
  
 });
 
