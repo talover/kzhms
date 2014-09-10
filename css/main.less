@@ -2261,7 +2261,7 @@ h1 {
     }
 }// END .registration-block
 
-#online-consultant-popup {
+.popup-consultant {
     width: 702px;
     background: #e9e8e8;
     min-height: 100px;
@@ -2315,7 +2315,6 @@ h1 {
                 font-family: "Arial Narrow";
                 font-size: 14pt;
                 margin: 0;
-                text-align: right;
                 letter-spacing: 0.5px;
                 padding: 12px 0 0 0;
             }
@@ -2364,6 +2363,7 @@ h1 {
                 box-shadow:         0px 2px 0px 0px rgba(0, 0, 0, 0.48);
                 text-indent: 16px;
                 font-size: 10pt;
+                outline: 0;
             }
         }
 
@@ -2662,10 +2662,15 @@ h1 {
     }
 }
 
-#calculator-popup {
+.calculator-popup {
     width: 701px;
     display: none;
     padding: 33px 52px 33px 55px;
+
+    .popup-title {
+        text-transform: none;
+        letter-spacing: 0.5px;
+    }
 
     .attention {
         h3 {
@@ -2718,11 +2723,25 @@ h1 {
         }
 
         .form-cont {
-            
             margin: 23px 0 0 0;
+            position: relative;
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;   
+                margin: auto;
+                background: #00adda;
+                .border-radius-full(5px,5px,0,0);
+                width: 500px;
+                height: 10px;
+
+            }
             
             .form-block {
-                width: 364px;
+                width: 500px;
                 padding: 36px 8px 20px 8px;
                 background: #ebebeb;
                 position: relative;
@@ -2739,8 +2758,7 @@ h1 {
                 &:after {
                     top: 0;
                     height: 15px;
-                    background: url(images/form-top.png);
-                    .border-radius-full(5px,5px,0,0);
+                    background: url(images/form-top.png) no-repeat center top;
                 }
 
                 &:before {
@@ -2750,7 +2768,268 @@ h1 {
                     .border-radius-full(0,0,5px,5px);
                 }
 
+                .row {
+                    padding-bottom: 10px;
+
+                    &.checkbox-cont {
+                        .jq-checkbox {
+                            float: left;
+                            margin-top: 3px;
+                        }
+
+                        label {
+                            display: block;
+                            width: auto;
+                            margin-left:20px;
+                        }
+                    }
+
+                    input[type="text"] {
+                        width: 100%;
+                        text-indent: 10px;
+                    }
+                }
+
+                .check-list {
+                    li {
+                        padding: 2px 0;
+                        
+                        label {
+                            display: inline-block;
+                            vertical-align: top;
+                            color: #848484;
+                            font-size: 9.5pt;
+                        }
+                    }
+                }
+
+                .payment-method {
+                    font-size: 10pt;
+
+                    h3 {
+                        color: #00adda;
+                        font-weight: normal;
+                        margin: 0;
+                        font-size: 10pt;
+                        padding: 2px 0 0 3px;
+                    }
+
+                    ul {
+                        padding: 10pt;
+                        padding: 11px 0 10px 18px;
+
+                        li {
+                            .jq-checkbox {
+                                float: left;
+                                margin-top: 3px;
+                            }
+
+                            label {
+                                color: #575757;
+                                display: block;
+                                margin-left: 22px;
+                                width: auto;
+                            }
+                        }
+                    }
+                }
+
+                label {
+                    display: block;
+                    font-size: 10pt;
+                    color: #575757;
+
+                    &.smoll {
+                        font-size: 9pt;
+                    }
+                } 
+
+                .add-btn {
+                    width: 100%;
+                    display: block;
+                    .border-radius(5px);
+                    border: 1px solid #a5810b;
+                    background: #deb223; /* Old browsers */
+                    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+                    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RlYjIyMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiZjk1MGMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+                    background: -moz-linear-gradient(left,  #deb223 0%, #bf950c 100%); /* FF3.6+ */
+                    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#deb223), color-stop(100%,#bf950c)); /* Chrome,Safari4+ */
+                    background: -webkit-linear-gradient(left,  #deb223 0%,#bf950c 100%); /* Chrome10+,Safari5.1+ */
+                    background: -o-linear-gradient(left,  #deb223 0%,#bf950c 100%); /* Opera 11.10+ */
+                    background: -ms-linear-gradient(left,  #deb223 0%,#bf950c 100%); /* IE10+ */
+                    background: linear-gradient(to right,  #deb223 0%,#bf950c 100%); /* W3C */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#deb223', endColorstr='#bf950c',GradientType=1 ); /* IE6-8 */
+                    -webkit-box-shadow: inset 0px 0px 0px 1px #deba47;
+                    -moz-box-shadow:    inset 0px 0px 0px 1px #deba47;
+                    box-shadow:         inset 0px 0px 0px 1px #deba47;
+                    height: 26px;
+                    color: #fff;
+                    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.41);
+                    text-decoration: none;
+                    line-height: 24px;
+                    font-size: 10pt;
+
+                    i {
+                        display: inline-block;
+                        vertical-align: top;
+                        background: url(images/add.png);
+                        width: 12px;
+                        height: 11px;
+                        margin: 7px 4px 0 10px;
+                    }
+                }
+
+                .jq-selectbox {
+                    width: 100%;
+
+                    .jq-selectbox__select {
+                        border:1px solid #b6b6b6;
+                        background: #f9f9f9;
+                        text-shadow:none;
+                        .border-radius(5px);
+                        -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.48);
+                        -moz-box-shadow:    0px 1px 0px 0px rgba(0, 0, 0, 0.48);
+                        box-shadow:         0px 1px 0px 0px rgba(0, 0, 0, 0.48);
+                        padding:0 35px 0 0;
+                        height: 26px;
+                        line-height: 26px;
+                        color: #848484;
+                        font-size: 10pt;
+                        text-indent: 10px;
+                        white-space: nowrap; /* Запрещаем перенос строк */
+                        overflow: hidden; /* Обрезаем все, что не помещается в область */
+                        text-overflow: ellipsis; /* Добавляем многоточие */
+                    }
+
+                    .jq-selectbox__trigger {
+                        border: 0;
+
+                        .jq-selectbox__trigger-arrow {
+                            border-top: 6px solid #000;
+                            border-right: 4.5px solid transparent;
+                            border-left: 4.5px solid transparent;
+                            top: 10px;
+                            right: 15px;
+                        }
+                    }
+
+                    .jq-selectbox__dropdown {
+                        top: 27px!important;
+                        font-size: 10pt;
+                        color: #848484;
+                    }
+                }
+
+                input[type="text"] ,
+                textarea {
+                    border:1px solid #b6b6b6;
+                    background-color: #f9f9f9;
+                    text-shadow:none;
+                    .border-radius(5px);
+                    -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.48);
+                    -moz-box-shadow:    0px 1px 0px 0px rgba(0, 0, 0, 0.48);
+                    box-shadow:         0px 1px 0px 0px rgba(0, 0, 0, 0.48);
+                    height: 26px;
+                    line-height: 26px;
+                    color: #848484;
+                    font-size: 10pt;
+                    text-indent: 10px;
+                    white-space: nowrap; /* Запрещаем перенос строк */
+                    overflow: hidden; /* Обрезаем все, что не помещается в область */
+                    text-overflow: ellipsis; /* Добавляем многоточие */
+                    outline: 0;
+                    width: 237px;
+
+                    &.datepicker {
+                        background-image: url(images/calendar-ico.png);
+                        background-repeat: no-repeat;
+                        background-position: 212px 4px;
+                    }
+
+
+                    &.identification {
+                        background: #ededed;
+                        -webkit-box-shadow: -1px -1px 0px 0px rgba(0, 0, 0, 0.48);
+                        -moz-box-shadow:    -1px -1px 0px 0px rgba(0, 0, 0, 0.48);
+                        box-shadow:         -1px -1px 0px 0px rgba(0, 0, 0, 0.48);
+                        width: 118px;
+                    }
+
+
+                    &::-webkit-input-placeholder {
+                       color: #7b7b7b;
+                    }
+
+                    &:-moz-placeholder { /* Firefox 18- */
+                       color: #7b7b7b;  
+                    }
+
+                    &::-moz-placeholder {  /* Firefox 19+ */
+                       color: #7b7b7b;  
+                    }
+
+                    &:-ms-input-placeholder {  
+                       color: #7b7b7b;  
+                    }
+
+                    &.blue {
+
+                        &::-webkit-input-placeholder {
+                           color: #00adda;
+                        }
+
+                        &:-moz-placeholder { /* Firefox 18- */
+                           color: #00adda;  
+                        }
+
+                        &::-moz-placeholder {  /* Firefox 19+ */
+                           color: #00adda;  
+                        }
+
+                        &:-ms-input-placeholder {  
+                           color: #00adda;  
+                        }
+                    }
+                }
+
+                textarea {
+                    height: 77px;
+                    width: 100%;
+                }
+
+                .agreement {
+                    li {
+                        display: inline-block;
+                        vertical-align: top;
+
+                        &:first-child {
+                            margin-right: 30px;
+                        }
+
+                        label {
+                            display: inline-block;
+                            vertical-align: top;
+                        }
+                    }
+                }
+
+
                 table {
+
+                    &.identification {
+                        td {
+                            width: auto;
+                        }
+
+                        input[type="text"] {
+                            width: 185px;
+                        }
+
+                        .jq-selectbox {
+                            width: 287px!important;
+                        }
+                    }
+
                     tr {
                         td {
                             width: 50%;
@@ -2765,15 +3044,12 @@ h1 {
                                 padding-left: 5px;
                             }
 
-                            label {
-                                display: block;
-                                font-size: 10pt;
-                                color: #575757;
-
-                                &.smoll {
-                                    font-size: 9pt;
+                            &.title-name {
+                                label {
+                                    border-bottom: 1px solid #aaaaaa;
+                                    padding-bottom: 5px;
                                 }
-                            } 
+                            }
 
                             &.full {
                                 padding-right:0;
@@ -2784,7 +3060,7 @@ h1 {
 
                             &.payment {
                                 .jq-selectbox {
-                                    width: 61px;
+                                    width: 81px;
                                     float: left;
 
                                     .jq-selectbox__select {
@@ -2793,78 +3069,14 @@ h1 {
                                 }
 
                                 input[type="text"] {
-                                    width: 97px;
+                                    width: 147px;
                                     float: left;
                                     margin: 0 0 0 9px;
                                 }
                             }
 
                             .jq-selectbox {
-                                width: 168px;
-
-                                .jq-selectbox__select {
-                                    border:1px solid #b6b6b6;
-                                    background: #f9f9f9;
-                                    text-shadow:none;
-                                    .border-radius(5px);
-                                    -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.48);
-                                    -moz-box-shadow:    0px 1px 0px 0px rgba(0, 0, 0, 0.48);
-                                    box-shadow:         0px 1px 0px 0px rgba(0, 0, 0, 0.48);
-                                    padding:0 35px 0 0;
-                                    height: 26px;
-                                    line-height: 26px;
-                                    color: #848484;
-                                    font-size: 10pt;
-                                    text-indent: 17px;
-                                    white-space: nowrap; /* Запрещаем перенос строк */
-                                    overflow: hidden; /* Обрезаем все, что не помещается в область */
-                                    text-overflow: ellipsis; /* Добавляем многоточие */
-                                }
-
-                                .jq-selectbox__trigger {
-                                    border: 0;
-
-                                    .jq-selectbox__trigger-arrow {
-                                        border-top: 6px solid #000;
-                                        border-right: 4.5px solid transparent;
-                                        border-left: 4.5px solid transparent;
-                                        top: 10px;
-                                        right: 15px;
-                                    }
-                                }
-
-                                .jq-selectbox__dropdown {
-                                    top: 27px!important;
-                                    font-size: 10pt;
-                                    color: #848484;
-                                }
-                            }
-
-                            input[type="text"] {
-                                border:1px solid #b6b6b6;
-                                background-color: #f9f9f9;
-                                text-shadow:none;
-                                .border-radius(5px);
-                                -webkit-box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.48);
-                                -moz-box-shadow:    0px 1px 0px 0px rgba(0, 0, 0, 0.48);
-                                box-shadow:         0px 1px 0px 0px rgba(0, 0, 0, 0.48);
-                                padding:0 35px 0 0;
-                                height: 26px;
-                                line-height: 26px;
-                                color: #848484;
-                                font-size: 10pt;
-                                text-indent: 17px;
-                                white-space: nowrap; /* Запрещаем перенос строк */
-                                overflow: hidden; /* Обрезаем все, что не помещается в область */
-                                text-overflow: ellipsis; /* Добавляем многоточие */
-                                outline: 0;
-                                width: 168px;
-
-                                &.datepicker {
-                                    background-image: url(images/calendar-ico.png);
-                                    background-repeat: no-repeat;
-                                    background-position: 137px 4px;
-                                }
+                                width: 237px;
                             }
                         }
                     }
@@ -2887,7 +3099,7 @@ h1 {
             .nav-tabs {
                 margin: 20px 0 0 0;
 
-                button {
+                a {
                     height: 25px;
                     line-height: 25px;
                     width: 112px;
@@ -2898,6 +3110,9 @@ h1 {
                     .transition(0.5s,all);
                     color: #fff;
                     font-size: 10pt;
+                    display: block;
+                    text-align: center;
+                    text-decoration: none;
 
                     &:hover {
                         opacity: 1;
@@ -2935,7 +3150,7 @@ h1 {
         }
 
         .fancybox-inner {
-            overflow: visible!important;
+            overflow: auto!important;
         }
     }
 }

@@ -114,7 +114,7 @@ $(document).ready(function() {
 
 	/*-- calculator tabs --*/
 
-	$('.calculator-tabs .nav-tabs button').click(function(){
+	$('.calculator-tabs .nav-tabs a').click(function(){
 		var calculator_tab = $(this).data('calculatorTab');
 		
 		$('.calculator-tabs').removeClass('active');

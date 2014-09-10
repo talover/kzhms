@@ -1,7 +1,7 @@
 .jq-checkbox {
 	top: -1px;
-	width: 13px;
-	height: 13px;
+	width: 15px;
+	height: 15px;
 	border: 1px solid #C3C3C3;
 	border-radius: 3px;
 	background: #F6F6F6 url(data:image/gif;base64,R0lGODlhAQAMALMAAPHx8f7+/vv7+/j4+PX19fLy8vz8/Pn5+fb29vPz8/39/ff39wAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAABAAwAAAQJMCgjzliIpAIiADs=) repeat-x;
@@ -410,3 +410,20 @@ input[type="submit"].styler[disabled] {
 	box-shadow: none;
 	color: #888;
 }
+
+                
+                    &::-webkit-input-placeholder {
+                       color: #7b7b7b;
+                    }
+
+                    &:-moz-placeholder { /* Firefox 18- */
+                       color: #7b7b7b;  
+                    }
+
+                    &::-moz-placeholder {  /* Firefox 19+ */
+                       color: #7b7b7b;  
+                    }
+
+                    &:-ms-input-placeholder {  
+                       color: #7b7b7b;  
+                    }

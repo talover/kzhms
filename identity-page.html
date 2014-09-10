@@ -13,11 +13,11 @@
 		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 		<link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
-<!-- 
+<!--         <link rel="stylesheet" href="css/main.css"> -->
+
 		<link rel="stylesheet/less" type="text/css" href="css/main.less">
 		<script src="js/vendor/less.js" type="text/javascript"></script>
- -->
+
 		<!--[if lt IE 9]>
 			<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 			<script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
@@ -181,7 +181,7 @@
 						</li>
 
 						<li>
-							<a href="#">
+							<a class="popup-second" href="#insurance-of-property">
 								<h4>Каско VIP</h4>
 								<span>
 									<img src="img/pic-10.png" alt="">
@@ -198,10 +198,10 @@
 						Ваш договор  
 					</li>
 					<li>
-						<a class="blue-btn popup-second" href="#calculator-popup">Заказать расчет</a>
+						<a class="blue-btn popup-second" href="#calculator-order">Заказать расчет</a>
 					</li>
 					<li>
-						<a class="popup yellow-btn" href="#">Расчитать самому</a>
+						<a class="popup-second yellow-btn" href="#calculator-order-myself">Расчитать самому</a>
 					</li>
 				</ul>
 
@@ -226,8 +226,6 @@
 					</ul>
 				</div>
 			</section><!--#identity-->
-
-
 		</div><!--END #main-->
 
 		<footer id="footer">
@@ -268,12 +266,12 @@
 		</footer><!--END #footer-->
 
 		<div id="consultant">
-			<a id="online-order" href="#"></a>
+			<a id="online-order" class="popup" href="#online-order-popup"></a>
 
-			<a id="insurance-case" href="#"></a>
+			<a id="insurance-case" class="popup" href="#insurance-case-popup"></a>
 		</div>
 
-		<div id="online-consultant-popup">
+		<div id="online-consultant-popup" class="popup-consultant">
 			<div class="popup-title clearfix">
 				<div class="img-block">
 					<img src="img/pic-6.png" alt="">
@@ -303,7 +301,67 @@
 			</form>
 		</div>
 
-		<div id="calculator-popup">
+		<div id="insurance-case-popup" class="popup-consultant">
+			<div class="popup-title clearfix">
+				<div class="img-block">
+					<img src="img/pic-6.png" alt="">
+				</div>
+				<div class="f-right">
+					<div class="logo"><img src="img/pic-7.png" alt=""></div>
+					<p>Страховой  случай</p>
+				</div>
+			</div>
+			<p class="description">
+				Спасибо, что связались с нами! Заполните, пожалуйста, небольшую форму <br/> и нажмите <span>"Начать диалог".</span> 
+			</p>
+
+			<form>
+
+				<div class="row">
+					<label for="consult-name" >Ваше имя:</label>
+					<input id="consult-name" type="text" placeholder="Укажите свое имя " />
+				</div>
+
+				<div class="row">
+					<label for="consult-email">E-mail:</label>
+					<input id="consult-email" type="text" />
+				</div>
+
+				<button type="submit" class="blue-btn">Начать диалог</button>
+			</form>
+		</div>
+
+		<div id="online-order-popup" class="popup-consultant">
+			<div class="popup-title clearfix">
+				<div class="img-block">
+					<img src="img/pic-6.png" alt="">
+				</div>
+				<div class="f-right">
+					<div class="logo"><img src="img/pic-7.png" alt=""></div>
+					<p>On-line заявка</p>
+				</div>
+			</div>
+			<p class="description">
+				Спасибо, что связались с нами! Заполните, пожалуйста, небольшую форму <br/> и нажмите <span>"Начать диалог".</span> 
+			</p>
+
+			<form>
+
+				<div class="row">
+					<label for="consult-name" >Ваше имя:</label>
+					<input id="consult-name" type="text" placeholder="Укажите свое имя " />
+				</div>
+
+				<div class="row">
+					<label for="consult-email">E-mail:</label>
+					<input id="consult-email" type="text" />
+				</div>
+
+				<button type="submit" class="blue-btn">Начать диалог</button>
+			</form>
+		</div>
+
+		<div id="calculator-order" class="calculator-popup">
 			<h1>КАСКО</h1>
 
 			<div class="attention">
@@ -445,6 +503,19 @@
 							</tr>
 
 							<tr>
+								<td class="full" colspan="2"><label>Наличие у Страхователя действующего полиса ОГПО авто в АО «СК «Казахмыс»"</label></td>
+							</tr>
+
+							<tr>
+								<td class="full" colspan="2">
+									<select>
+										<option>Да</option>
+										<option>Нет</option>
+									</select>
+								</td>
+							</tr>
+
+							<tr>
 								<td colspan="2" class="full">
 									<label class="smoll">
 										*Франшиза - это та часть ущерба по КАСКО, которую при наступлении страхового события Вы возмещает самостоятельно в пределах выбранной вами суммы.
@@ -458,7 +529,7 @@
 					</div>
 
 					<div class="nav-tabs clearfix">
-						<button data-calculator-tab="#calculator-tab-2" class="f-right">Далее</button>
+						<a href="javascript:void(0)" data-calculator-tab="#calculator-tab-2" class="f-right">Далее</a>
 					</div>
 				</form>
 			</div>
@@ -474,12 +545,48 @@
 
 				<form class="form-cont">
 					<div class="form-block">
-						2
+
+						<div class="row">
+							<label>Фамилия страхователя	</label>
+							<input type="text" placeholder="Петров" />
+						</div>
+
+						<div class="row">
+							<label>Имя страхователя	</label>
+							<input type="text" placeholder="Иван" />
+						</div>
+
+						<div class="row">
+							<label>Отчество страхователя</label>
+							<input type="text" placeholder="Иванович" />
+						</div>
+
+						<div class="row">
+							<label>ИИН </label>
+							<input class="identification" type="text" placeholder="123456789123" />
+						</div>
+
+						<div class="row">
+							<label>Контактный телефон</label>
+							<input class="blue" type="text" placeholder="+7 (123) 234-45-67" />
+						</div>
+
+						<div class="row">
+							<label>E-mail</label>
+							<input class="blue" type="text" placeholder="wreuhru@gmail.com" />
+						</div>
+
+						<div class="row checkbox-cont">
+							<input type="checkbox" />
+							<label>
+								"Я согласен (согласна) получать уведомления об окончании срока действия полиса, а также рассылки с информацией о продуктах  АО "СК "Казахмыс" на указанный email и номер телефона."
+							</label>
+						</div>
 					</div>
 
 					<div class="nav-tabs clearfix">
-						<button data-calculator-tab="#calculator-tab-1" class="f-left">Назад</button>
-						<button data-calculator-tab="#calculator-tab-3" class="f-right">Далее</button>
+						<a href="javascript:void(0)" data-calculator-tab="#calculator-tab-1" class="f-left">Назад</a>
+						<a href="javascript:void(0)" data-calculator-tab="#calculator-tab-3" class="f-right">Далее</a>
 					</div>
 				</form>
 			</div>
@@ -495,17 +602,592 @@
 
 				<form class="form-cont">
 					<div class="form-block">
-						3
+						<div class="payment-method">
+							<h3>Выберите способ оплаты полиса:</h3>
+							<ul>
+
+								<li>
+									<input id="ckeck-1" type="checkbox" />
+									<label for="ckeck-1" >оплата наличными при курьерской доставке</label>
+								</li>
+
+								<li>
+									<input id="ckeck-2" type="checkbox" />
+									<label for="ckeck-1">оплата банковской картой</label>
+								</li>
+							</ul>
+						</div>
+
+						<div class="row">
+							<label>Выберите регион</label>
+							
+							<select>
+								<option>Алматы</option>
+								<option>Алматы 1</option>
+								<option>Алматы 2</option>
+								<option>Алматы 3</option>
+								<option>Алматы 4</option>
+							</select>
+						</div>
+
+						<div class="row">
+							<label>Улица (микрорайон), дом, квартира (офис)</label>
+							<input type="text" placeholder="ул. Московская" />
+						</div>
+
+						<div class="row">
+							<label>Ваши комментарии</label>
+							<textarea placeholder="Введите текст сообщения"></textarea>
+						</div>
+
+						<button class="blue-btn" type="submit">Отправить</button>
 					</div>
 
 					<div class="nav-tabs clearfix">
-						<button data-calculator-tab="#calculator-tab-2" class="f-left">Назад</button>
+						<a href="javascript:void(0)" data-calculator-tab="#calculator-tab-2" class="f-left">Назад</a>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div id="calculator-order-myself" class="calculator-popup">
+			<h1 class="popup-title">Обязательное страхование ГПО владельцев транспортных средств</h1>
+
+			<div class="attention">
+				<h3>Внимание!</h3>
+				<p>
+					Расчет на сайте служит для предварительного ознакомления с тарифами и не является итоговым предложением клиентам компании. 
+				</p>
+			</div>
+
+			<div id="calculator-tab-4" class="calculator-tabs active">
+				<ul class="calculator-nav">
+					<li class="active">Расчет страховки</li>
+					<li class="arrow"></li>
+					<li>Заполнить анкетные данные</li>
+					<li class="arrow"></li>
+					<li>Выбор формы заявки и доставки</li>
+				</ul>
+
+				<form class="form-cont">
+					<div class="form-block">
+						<table>
+							<tr>
+								<td colspan="2" class="full">
+									<table class="identification">						
+										<tr>
+											<td>
+												<label>ИИН</label>
+											</td>
+											<td>
+												<label>Возраст/стаж вождения водителя</label>
+											</td>
+										</tr>
+										<tr>
+											<td>							
+												<input type="text" placeholder="123456789012" />
+											</td>
+											<td>								
+												<select>
+													<option>2013</option>
+													<option>2014</option>
+													<option>2015</option>
+												</select>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+
+							<tr>
+								<td></td>
+								<td><a class="add-btn" href="javascript:void(0)"><i></i> Добавить водителя</a></td>
+							</tr>
+
+							<tr>
+								<td><label>Тип ТС</label></td>
+								<td><label>Год выпуска ТС</label></td>
+							</tr>
+							<tr>
+								<td>
+									<select>
+										<option>Легковой</option>
+										<option>Легковой 2</option>
+										<option>Легковой 3</option>
+									</select>
+								</td>
+								<td>
+
+									<select>
+										<option>2005</option>
+										<option>2006</option>
+										<option>2007</option>
+									</select>
+								</td>
+							</tr>
+
+							<tr>
+								<td><label>Место регистрации ТС</label></td>
+								<td><label></label></td>
+							</tr>
+
+							<tr>
+								<td>
+									<select>
+										<option>Алматы</option>
+										<option>Алматы 2</option>
+										<option>Алматы 3</option>
+									</select>
+								</td>
+								<td><a class="add-btn" href="javascript:void(0)"><i></i> Добавить ТС</a></td>
+							</tr>
+
+							<tr>
+								<td colspan="2" class="title-name"><label>Калугина Таиса Васильевна. Класс - 8</label></td>
+							</tr>
+
+							<tr>
+								<td><label>Срок страхования с</label></td>
+								<td><label>Срок страхования по</label></td>
+							</tr>
+							<tr>
+								<td><input type="text" class="datepicker" value="09/15/2014"></td>
+								<td><input type="text" class="datepicker" value="09/15/2014"></td>
+							</tr>
+
+							<tr>
+								<td colspan="2">
+									<label>
+										Являетесь ли Вы ветераном войны, инвалидом I и II группы, пенсионером?	
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<ul class="agreement">
+										<li>
+											<input id="check-yes" type="checkbox" />
+											<label for="check-yes">Да</label>
+										</li>
+										<li>
+											<input id="check-no" type="checkbox" />
+											<label for="check-no">Нет</label>
+										</li>
+									</ul>
+								</td>
+							</tr>
+						</table>
+
+						<p class="payment-text">Стоимость полиса составляет: 00000 тг.</p>
+					</div>
+
+					<div class="nav-tabs clearfix">
+						<a href="javascript:void(0)" data-calculator-tab="#calculator-tab-5" class="f-right">Далее</a>
 					</div>
 				</form>
 			</div>
 
+			<div id="calculator-tab-5" class="calculator-tabs">
+				<ul class="calculator-nav">
+					<li>Расчет страховки</li>
+					<li class="arrow"></li>
+					<li class="active">Заполнить анкетные данные</li>
+					<li class="arrow"></li>
+					<li>Выбор формы заявки и доставки</li>
+				</ul>
+
+				<form class="form-cont">
+					<div class="form-block">
+
+						<div class="row">
+							<label>Фамилия страхователя	</label>
+							<input type="text" placeholder="Петров" />
+						</div>
+
+						<div class="row">
+							<label>Имя страхователя	</label>
+							<input type="text" placeholder="Иван" />
+						</div>
+
+						<div class="row">
+							<label>Отчество страхователя</label>
+							<input type="text" placeholder="Иванович" />
+						</div>
+
+						<div class="row">
+							<label>ИИН </label>
+							<input class="identification" type="text" placeholder="123456789123" />
+						</div>
+
+						<div class="row">
+							<label>Контактный телефон</label>
+							<input class="blue" type="text" placeholder="+7 (123) 234-45-67" />
+						</div>
+
+						<div class="row">
+							<label>E-mail</label>
+							<input class="blue" type="text" placeholder="wreuhru@gmail.com" />
+						</div>
+
+						<div class="row checkbox-cont">
+							<input type="checkbox" />
+							<label>
+								"Я согласен (согласна) получать уведомления об окончании срока действия полиса, а также рассылки с информацией о продуктах  АО "СК "Казахмыс" на указанный email и номер телефона."
+							</label>
+						</div>
+					</div>
+
+					<div class="nav-tabs clearfix">
+						<a href="javascript:void(0)" data-calculator-tab="#calculator-tab-4" class="f-left">Назад</a>
+						<a href="javascript:void(0)" data-calculator-tab="#calculator-tab-6" class="f-right">Далее</a>
+					</div>
+				</form>
+			</div>
+
+			<div id="calculator-tab-6" class="calculator-tabs">
+				<ul class="calculator-nav">
+					<li>Расчет страховки</li>
+					<li class="arrow"></li>
+					<li>Заполнить анкетные данные</li>
+					<li class="arrow"></li>
+					<li class="active">Выбор формы заявки и доставки</li>
+				</ul>
+
+				<form class="form-cont">
+					<div class="form-block">
+						<div class="payment-method">
+							<h3>Выберите способ оплаты полиса:</h3>
+							<ul>
+
+								<li>
+									<input id="ckeck-1" type="checkbox" />
+									<label for="ckeck-1" >оплата наличными при курьерской доставке</label>
+								</li>
+
+								<li>
+									<input id="ckeck-2" type="checkbox" />
+									<label for="ckeck-1">оплата банковской картой</label>
+								</li>
+							</ul>
+						</div>
+
+						<div class="row">
+							<label>Выберите регион</label>
+							
+							<select>
+								<option>Алматы</option>
+								<option>Алматы 1</option>
+								<option>Алматы 2</option>
+								<option>Алматы 3</option>
+								<option>Алматы 4</option>
+							</select>
+						</div>
+
+						<div class="row">
+							<label>Улица (микрорайон), дом, квартира (офис)</label>
+							<input type="text" placeholder="ул. Московская" />
+						</div>
+
+						<div class="row">
+							<label>Ваши комментарии</label>
+							<textarea placeholder="Введите текст сообщения"></textarea>
+						</div>
+
+						<button class="blue-btn" type="submit">Отправить</button>
+					</div>
+
+					<div class="nav-tabs clearfix">
+						<a href="javascript:void(0)" data-calculator-tab="#calculator-tab-5" class="f-left">Назад</a>
+					</div>
+				</form>
+			</div>
 		</div>
 
+		<div id="insurance-of-property" class="calculator-popup">
+			<h1 class="popup-title">Страхование имущества</h1>
+
+			<div class="attention">
+				<h3>Внимание!</h3>
+				<p>
+					Расчет на сайте служит для предварительного ознакомления с тарифами и не является итоговым предложением клиентам компании. 
+				</p>
+			</div>
+
+			<div id="calculator-tab-7" class="calculator-tabs active">
+				<ul class="calculator-nav">
+					<li class="active">Расчет страховки</li>
+					<li class="arrow"></li>
+					<li>Заполнить анкетные данные</li>
+					<li class="arrow"></li>
+					<li>Выбор формы заявки и доставки</li>
+				</ul>
+
+				<form class="form-cont">
+					<div class="form-block">
+						<table>
+							<tr>
+								<td><label>Статус страхователя</label></td>
+								<td><label>Объект страхования</label></td>
+							</tr>
+
+							<tr>
+								<td>
+									<select>
+										<option>Физ. лицо</option>
+										<option>Физ. лицо 2</option>
+										<option>Физ. лицо 3</option>
+									</select>
+								</td>
+								<td>
+
+									<select>
+										<option>Квартира в пан. доме</option>
+										<option>Квартира в пан. доме 2</option>
+										<option>Квартира в пан. доме 3</option>
+									</select>
+								</td>
+							</tr>
+
+							<tr>
+								<td><label>Укажите стоимость имущества</label></td>
+								<td><label></label></td>
+							</tr>
+
+							<tr>
+								<td class="payment">
+									<select>
+										<option>$</option>
+										<option>$ 2</option>
+										<option>$ 3</option>
+									</select>
+									<input type="text" placeholder="80 000" />
+								</td>
+								<td></td>
+							</tr>
+
+							<tr>
+								<td colspan="2"><label>Покрываемые риски</label></td>
+							</tr>
+
+							<tr>
+								<td colspan="2">
+									<ul class="check-list">
+
+										<li>
+											<input id="check-1" type="checkbox" />
+											<label for="check-1">пожар, удар молнии,взрыв</label>
+										</li>
+
+										<li>
+											<input id="check-2" type="checkbox" />
+											<label for="check-2">падение на имущество пилотируемых объектов</label>
+										</li>
+
+										<li>
+											<input id="check-3" type="checkbox" />
+											<label for="check-3">стихийные бедствия и землетрясение</label>
+										</li>
+
+										<li>
+											<input id="check-4" type="checkbox" />
+											<label for="check-4">затопление</label>
+										</li>
+
+										<li>
+											<input id="check-5" type="checkbox" />
+											<label for="check-5">противоправные действия третьих лиц</label>
+										</li>
+
+										<li>
+											<input id="check-6" type="checkbox" />
+											<label for="check-6">полный пакет рисков</label>
+										</li>
+									</ul>
+								</td>
+							</tr>
+
+							<tr>
+								<td><label>Период страхования</label></td>
+							</tr>
+
+							<tr>
+								<td class="full" colspan="2">
+									<select>
+										<option>12 месяцев</option>
+										<option>24 месяцев</option>
+										<option>48 месяцев</option>
+									</select>
+								</td>
+							</tr>
+
+							<tr>
+								<td><label>Наличие действующего договора с АО "СК "Казахмыс"</label></td>
+								<td><label>Наличие противопожарной сигнализации</label></td>
+							</tr>
+
+							<tr>
+								<td>
+									<select>
+										<option>Да</option>
+										<option>Нет</option>
+									</select>
+								</td>
+
+								<td>
+									<select>
+										<option>Да</option>
+										<option>Нет</option>
+									</select>
+								</td>
+							</tr>
+
+							<tr>
+								<td><label>Наличие охранной сигнализации</label></td>
+								<td><label>Страховой случай по прошлому договору страхования</label></td>
+							</tr>
+
+							<tr>
+								<td>
+									<select>
+										<option>Да</option>
+										<option>Нет</option>
+									</select>
+								</td>
+
+								<td>
+									<select>
+										<option>Да</option>
+										<option>Нет</option>
+									</select>
+								</td>
+							</tr>
+						</table>
+
+						<button type="submit" class="blue-btn">Рассчитать</button>
+						<p class="payment-text">Стоимость полиса составляет: 00000 тг.</p>
+					</div>
+
+					<div class="nav-tabs clearfix">
+						<a href="javascript:void(0)" data-calculator-tab="#calculator-tab-8" class="f-right">Далее</a>
+					</div>
+				</form>
+			</div>
+
+			<div id="calculator-tab-8" class="calculator-tabs">
+				<ul class="calculator-nav">
+					<li>Расчет страховки</li>
+					<li class="arrow"></li>
+					<li class="active">Заполнить анкетные данные</li>
+					<li class="arrow"></li>
+					<li>Выбор формы заявки и доставки</li>
+				</ul>
+
+				<form class="form-cont">
+					<div class="form-block">
+
+						<div class="row">
+							<label>Фамилия страхователя	</label>
+							<input type="text" placeholder="Петров" />
+						</div>
+
+						<div class="row">
+							<label>Имя страхователя	</label>
+							<input type="text" placeholder="Иван" />
+						</div>
+
+						<div class="row">
+							<label>Отчество страхователя</label>
+							<input type="text" placeholder="Иванович" />
+						</div>
+
+						<div class="row">
+							<label>ИИН </label>
+							<input class="identification" type="text" placeholder="123456789123" />
+						</div>
+
+						<div class="row">
+							<label>Контактный телефон</label>
+							<input class="blue" type="text" placeholder="+7 (123) 234-45-67" />
+						</div>
+
+						<div class="row">
+							<label>E-mail</label>
+							<input class="blue" type="text" placeholder="wreuhru@gmail.com" />
+						</div>
+
+						<div class="row checkbox-cont">
+							<input type="checkbox" />
+							<label>
+								"Я согласен (согласна) получать уведомления об окончании срока действия полиса, а также рассылки с информацией о продуктах  АО "СК "Казахмыс" на указанный email и номер телефона."
+							</label>
+						</div>
+					</div>
+
+					<div class="nav-tabs clearfix">
+						<a href="javascript:void(0)" data-calculator-tab="#calculator-tab-7" class="f-left">Назад</a>
+						<a href="javascript:void(0)" data-calculator-tab="#calculator-tab-9" class="f-right">Далее</a>
+					</div>
+				</form>
+			</div>
+
+			<div id="calculator-tab-9" class="calculator-tabs">
+				<ul class="calculator-nav">
+					<li>Расчет страховки</li>
+					<li class="arrow"></li>
+					<li>Заполнить анкетные данные</li>
+					<li class="arrow"></li>
+					<li class="active">Выбор формы заявки и доставки</li>
+				</ul>
+
+				<form class="form-cont">
+					<div class="form-block">
+						<div class="payment-method">
+							<h3>Выберите способ оплаты полиса:</h3>
+							<ul>
+
+								<li>
+									<input id="ckeck-1" type="checkbox" />
+									<label for="ckeck-1" >оплата наличными при курьерской доставке</label>
+								</li>
+
+								<li>
+									<input id="ckeck-2" type="checkbox" />
+									<label for="ckeck-1">оплата банковской картой</label>
+								</li>
+							</ul>
+						</div>
+
+						<div class="row">
+							<label>Выберите регион</label>
+							
+							<select>
+								<option>Алматы</option>
+								<option>Алматы 1</option>
+								<option>Алматы 2</option>
+								<option>Алматы 3</option>
+								<option>Алматы 4</option>
+							</select>
+						</div>
+
+						<div class="row">
+							<label>Улица (микрорайон), дом, квартира (офис)</label>
+							<input type="text" placeholder="ул. Московская" />
+						</div>
+
+						<div class="row">
+							<label>Ваши комментарии</label>
+							<textarea placeholder="Введите текст сообщения"></textarea>
+						</div>
+
+						<button class="blue-btn" type="submit">Отправить</button>
+					</div>
+
+					<div class="nav-tabs clearfix">
+						<a href="javascript:void(0)" data-calculator-tab="#calculator-tab-8" class="f-left">Назад</a>
+					</div>
+				</form>
+			</div>
+		</div>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
