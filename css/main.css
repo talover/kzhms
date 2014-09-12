@@ -3013,6 +3013,484 @@ h1 {
 .fancybox-popup-second .fancybox-skin .fancybox-inner {
   overflow: auto !important;
 }
+#feedback {
+  padding: 55px 10px 60px 10px;
+}
+#feedback .feedback-nav li {
+  display: inline-block;
+  vertical-align: top;
+}
+#feedback .feedback-nav li:first-child {
+  margin-right: 10px;
+}
+#feedback .feedback-nav li a {
+  display: inline-block;
+  vertical-align: top;
+  color: #004b9b;
+  font-size: 10pt;
+  height: 19px;
+  line-height: 19px;
+  padding: 0 18px;
+  -webkit-border-radius: 2px;
+  -moz-order-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+#feedback .feedback-nav li a.active {
+  text-decoration: none;
+  color: #fff;
+  background: #4ba2ce;
+}
+#feedback .feedback-tab {
+  display: none;
+}
+#feedback .feedback-tab.active {
+  display: block;
+}
+#feedback .feedback-tab .title-block {
+  text-align: center;
+  max-width: 700px;
+  padding-left: 55px;
+  padding: 27px 0 0 105px;
+  font-size: 10pt;
+}
+#feedback .feedback-tab .title-block h3 {
+  font-weight: normal;
+  color: #ac0912;
+  text-transform: uppercase;
+  margin: 0;
+}
+#feedback .feedback-tab .title-block p {
+  color: #004b9b;
+  margin: 0;
+}
+#feedback .feedback-tab form {
+  padding: 47px 0 0 55px;
+  max-width: 650px;
+}
+#feedback .feedback-tab form p {
+  font-size: 9pt;
+  margin: 0;
+  padding-top: 5px;
+  color: #505050;
+}
+#feedback .feedback-tab form p span,
+#feedback .feedback-tab form p a {
+  color: #265da3;
+}
+#feedback .feedback-tab form p a:hover {
+  text-decoration: none;
+}
+#feedback .feedback-tab form .row {
+  padding: 0 0 10px 0;
+}
+#feedback .feedback-tab form .row.captcha {
+  padding-top: 22px;
+}
+#feedback .feedback-tab form .row.captcha label {
+  font-size: 9pt;
+}
+#feedback .feedback-tab form .row.captcha label sup {
+  font-size: 10pt;
+}
+#feedback .feedback-tab form .row.captcha ul {
+  display: inline-block;
+  vertical-align: top;
+}
+#feedback .feedback-tab form .row.captcha ul li {
+  display: inline-block;
+  vertical-align: top;
+}
+#feedback .feedback-tab form .row.captcha ul li.arrow {
+  width: 13px;
+  height: 9px;
+  background: url(images/arrow.png);
+  margin: 17px 9px 0 9px;
+}
+#feedback .feedback-tab form .row.captcha ul li input[type="text"] {
+  height: 27px;
+  width: 114px;
+  box-shadow: none;
+  background: #fff;
+  -webkit-border-radius: 2px;
+  -moz-order-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  border: 1px solid #b6b6b6;
+  margin-top: 7px;
+}
+#feedback .feedback-tab form .row .blue-btn {
+  margin: 12px 0 0 224px;
+  padding: 0 20px;
+  float: none;
+}
+#feedback .feedback-tab form .row .tip {
+  display: block;
+  margin: 15px 0 0 224px;
+  font-size: 9pt;
+  color: #004b9b;
+}
+#feedback .feedback-tab form .row .tip sup {
+  font-size: 10pt;
+  color: #ac0912;
+  margin-top: 15px;
+  display: inline-block;
+  vertical-align: top;
+}
+#feedback .feedback-tab form .row > label {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  text-align: right;
+  margin: 0 20px 0 0;
+  color: #505050;
+  font-size: 10pt;
+  line-height: 1;
+}
+#feedback .feedback-tab form .row > label sup {
+  color: #ac0912;
+  font-size: 11pt;
+  line-height: 1;
+  margin-top: 7px;
+  display: inline-block;
+}
+#feedback .feedback-tab form .row input[type="text"],
+#feedback .feedback-tab form .row textarea {
+  border: 1px solid #b6b6b6;
+  background-color: #f9f9f9;
+  text-shadow: none;
+  -webkit-border-radius: 5px;
+  -moz-order-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px -1px 0px 0px rgba(0,0,0,0.48);
+  -moz-box-shadow: 0px -1px 0px 0px rgba(0,0,0,0.48);
+  box-shadow: 0px -1px 0px 0px rgba(0,0,0,0.48);
+  height: 24px;
+  color: #848484;
+  font-size: 10pt;
+  text-indent: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  outline: 0;
+  width: 366px;
+  display: inline-block;
+}
+#feedback .feedback-tab form .row textarea {
+  height: 114px;
+}
+#feedback .feedback-tab form .row .jq-selectbox {
+  width: 366px;
+}
+#feedback .feedback-tab form .row .jq-selectbox .jq-selectbox__select {
+  border: 1px solid #b6b6b6;
+  background: #f9f9f9;
+  text-shadow: none;
+  -webkit-border-radius: 5px;
+  -moz-order-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px -1px 0px 0px rgba(0,0,0,0.48);
+  -moz-box-shadow: 0px -1px 0px 0px rgba(0,0,0,0.48);
+  box-shadow: 0px -1px 0px 0px rgba(0,0,0,0.48);
+  padding: 0 35px 0 0;
+  height: 26px;
+  line-height: 26px;
+  color: #848484;
+  font-size: 10pt;
+  text-indent: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#feedback .feedback-tab form .row .jq-selectbox .jq-selectbox__trigger {
+  border: 0;
+}
+#feedback .feedback-tab form .row .jq-selectbox .jq-selectbox__trigger .jq-selectbox__trigger-arrow {
+  border-top: 6px solid #000;
+  border-right: 4.5px solid transparent;
+  border-left: 4.5px solid transparent;
+  top: 10px;
+  right: 15px;
+}
+#feedback .feedback-tab form .row .jq-selectbox .jq-selectbox__dropdown {
+  top: 27px !important;
+  font-size: 10pt;
+  color: #848484;
+}
+#feedback .feedback-tab form .row .check-list {
+  display: inline-block;
+  vertical-align: top;
+}
+#feedback .feedback-tab form .row .check-list li label {
+  font-size: 10pt;
+  display: inline-block;
+  vertical-align: top;
+  color: #004b9b;
+  line-height: 15px;
+  margin: 3px 0 0 3px;
+}
+#contacts {
+  padding: 70px 10px 60px 10px;
+}
+#contacts #map-block {
+  position: relative;
+  padding: 142px 0 0 7px;
+}
+#contacts #map-block .contacts-tabs {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+#contacts #map-block .contacts-tabs .contacts-tab {
+  display: none;
+}
+#contacts #map-block .contacts-tabs .contacts-tab.active {
+  display: block;
+}
+#contacts #map-block .contacts-tabs .contacts-tab h3 {
+  margin: 0;
+  font-size: 12pt;
+  color: #4e4e4e;
+  padding: 0 0 10px 0;
+}
+#contacts #map-block .contacts-tabs .contacts-tab ul.info {
+  width: 300px;
+}
+#contacts #map-block .contacts-tabs .contacts-tab ul.info li {
+  font-size: 11pt;
+  color: #525252;
+  line-height: 1.2;
+  padding-bottom: 5px;
+}
+#contacts #map-block .contacts-tabs .contacts-tab ul.info li span {
+  color: #818181;
+}
+#contacts #map-block .contacts-tabs .contacts-tab ul.info li b {
+  font-size: 12pt;
+  color: #4e4e4e;
+}
+#contacts #map-block .contacts-tabs .contacts-tab ul.info li a {
+  color: #00adda;
+}
+#contacts #map-block .contacts-tabs .contacts-tab .social li {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 3px;
+}
+#contacts #map-block .contacts-tabs .contacts-tab .social li a {
+  background-image: url(images/spritesheet.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+#contacts #map-block .contacts-tabs .contacts-tab .social li.mr {
+  margin-left: 0;
+}
+#contacts #map-block .contacts-tabs .contacts-tab .social li.mr a {
+  background-position: -5px -5px;
+  width: 23px;
+  height: 23px;
+}
+#contacts #map-block .contacts-tabs .contacts-tab .social li.tw a {
+  background-position: -260px -49px;
+  width: 23px;
+  height: 23px;
+}
+#contacts #map-block .contacts-tabs .contacts-tab .social li.cm a {
+  background-position: -380px -50px;
+  width: 23px;
+  height: 23px;
+}
+#contacts #map-block .contacts-tabs .contacts-tab .social li.fb a {
+  background-position: -260px -83px;
+  width: 23px;
+  height: 23px;
+}
+#contacts #map-block .contacts-tabs .contacts-tab .social li.vk a {
+  background-position: -380px -83px;
+  width: 23px;
+  height: 23px;
+}
+#contacts #map-block .contacts-tabs .contacts-tab .social li.in a {
+  background-position: -441px -50px;
+  width: 23px;
+  height: 23px;
+}
+#contacts .marker {
+  background: url(images/marker.png);
+  width: 45px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  left: 90%;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  -ms-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  z-index: 110;
+}
+#contacts #none {
+  position: absolute;
+  top: 0;
+  left: 90%;
+  opacity: 0;
+}
+#contacts .link-block a {
+  font-size: 10pt;
+  position: absolute;
+  font-weight: bold;
+  color: #525252;
+  text-decoration: none;
+  z-index: 100;
+}
+#contacts .link-block a.yellow {
+  color: #f3f606;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+}
+#contacts .link-block a.red {
+  color: #ff0000;
+}
+#contacts .link-block #aktobe {
+  top: 277px;
+  left: 228px;
+}
+#contacts .link-block #kulsare {
+  top: 370px;
+  left: 140px;
+}
+#contacts .link-block #actau {
+  top: 465px;
+  left: 80px;
+}
+#contacts .link-block #kostanay {
+  top: 193px;
+  left: 342px;
+}
+#contacts .link-block #astana {
+  top: 244px;
+  left: 510px;
+}
+#contacts .link-block #zheskazgan {
+  top: 333px;
+  left: 480px;
+}
+#contacts .link-block #satpaev {
+  top: 344px;
+  left: 409px;
+}
+#contacts .link-block #karaganda {
+  top: 284px;
+  left: 538px;
+}
+#contacts .link-block #kyzylorda {
+  top: 453px;
+  left: 385px;
+}
+#contacts .link-block #shymkent {
+  top: 562px;
+  left: 454px;
+}
+#contacts .link-block #almaty {
+  top: 471px;
+  left: 634px;
+}
+#contacts .link-block #balkhash {
+  top: 374px;
+  left: 633px;
+}
+#contacts .link-block #pavlodar {
+  top: 206px;
+  left: 602px;
+}
+#contacts .link-block #ust-kamenogorsk {
+  top: 282px;
+  left: 730px;
+}
+#contacts .link-block #ust-talovka {
+  top: 260px;
+  left: 730px;
+}
+#contacts .link-block #belousovka {
+  top: 233px;
+  left: 745px;
+}
+#contacts .link-block #zhezkent {
+  top: 238px;
+  left: 653px;
+}
+#contacts .contact-info {
+  width: 390px;
+  border-top: 2px solid #004b9b;
+  margin: 6px 0 0 0;
+  display: none;
+}
+#contacts .contact-info.active {
+  display: block;
+}
+#contacts .contact-info h3 {
+  margin: 0;
+  color: #004b9b;
+  padding: 21px 0 16px 0;
+  font-size: 11pt;
+  text-transform: uppercase;
+}
+#contacts .contact-info ul li {
+  font-size: 10pt;
+  color: #959595;
+}
+#contacts .contact-info ul li a {
+  color: #00adda;
+}
+#contacts .contact-info ul li a:hover {
+  text-decoration: none;
+}
+#contacts .feedback-block form h4 {
+  margin: 0;
+  color: #004b9b;
+  padding: 26px 0 11px 0;
+  font-size: 11pt;
+}
+#contacts .feedback-block form .blue-btn {
+  margin: 12px 0 0 0;
+  padding: 0 20px;
+  float: none;
+}
+#contacts .feedback-block form .row {
+  padding: 0 0 6px 0;
+}
+#contacts .feedback-block form .row input[type="text"],
+#contacts .feedback-block form .row textarea {
+  border: 1px solid #b6b6b6;
+  background-color: #f9f9f9;
+  text-shadow: none;
+  -webkit-border-radius: 5px;
+  -moz-order-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px -1px 0px 0px rgba(0,0,0,0.48);
+  -moz-box-shadow: 0px -1px 0px 0px rgba(0,0,0,0.48);
+  box-shadow: 0px -1px 0px 0px rgba(0,0,0,0.48);
+  height: 24px;
+  color: #848484;
+  font-size: 10pt;
+  text-indent: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  outline: 0;
+  width: 236px;
+  display: inline-block;
+}
+#contacts .feedback-block form .row textarea {
+  height: 82px;
+}
 @media (max-width: 1600px) {
   #footer:before {
     left: 81.5%;

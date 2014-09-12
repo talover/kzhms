@@ -176,6 +176,7 @@ ul {
     -o-border-radius: @a @b @c @d;
     border-radius: @a @b @c @d;
 }
+
 .stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
     background-position: @x @y;
     width: @width;
@@ -322,6 +323,7 @@ h1 {
     margin: 0;
     font-family: "Arial Narrow", arial;
 }
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -3154,6 +3156,569 @@ h1 {
         }
     }
 }
+
+#feedback {
+    padding: 55px 10px 60px 10px;
+
+    .feedback-nav {
+        li {
+            display: inline-block;
+            vertical-align: top;
+
+            &:first-child {
+                margin-right: 10px;
+            }
+
+            a {
+                display: inline-block;
+                vertical-align: top;
+                color: #004b9b;
+                font-size: 10pt;
+                height: 19px;
+                line-height: 19px;
+                padding:0 18px;
+                .border-radius(2px);
+
+                &.active {
+                    text-decoration: none;
+                    color: #fff;
+                    background: #4ba2ce;
+                    
+                }
+            }
+        }
+    }
+    .feedback-tab {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+
+        .title-block {
+            text-align: center;
+            max-width: 700px;
+            padding-left: 55px;
+            padding: 27px 0 0 105px;
+            font-size: 10pt;
+
+            h3 {
+                font-weight: normal;
+                color: #ac0912;
+                text-transform: uppercase;
+                margin: 0;
+            }
+
+            p {
+                color: #004b9b;
+                margin: 0;
+            }
+        }
+
+        form {
+            padding: 47px 0 0 55px;
+            max-width: 650px;
+
+            p {
+                font-size: 9pt;
+                margin: 0;
+                padding-top: 5px;
+                color: #505050;
+
+                span ,a {
+                    color: #265da3;
+                }
+
+                a { 
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+
+            .row {
+                padding: 0 0 10px 0;
+
+                &.captcha {
+                    padding-top: 22px;
+
+                    label {
+                        font-size: 9pt;
+
+                        sup {
+                            font-size: 10pt;
+                        }
+                    }
+
+                    ul {
+                        display: inline-block;
+                        vertical-align: top;
+
+                        li {
+                            display: inline-block;
+                            vertical-align: top;
+
+                            &.arrow {
+                                width: 13px;
+                                height: 9px;
+                                background: url(images/arrow.png);
+                                margin: 17px 9px 0 9px;
+                            }
+
+                            .img-block {
+
+                            }
+
+                            input[type="text"] {
+                                height: 27px;
+                                width: 114px;
+                                box-shadow: none;
+                                background: #fff;
+                                .border-radius(2px);
+                                border: 1px solid #b6b6b6;
+                                margin-top: 7px;
+                            }
+                        }
+                    }
+                }
+
+                .blue-btn {
+                    margin: 12px 0 0 224px;
+                    padding: 0 20px;
+                    float: none;
+                }
+
+                .tip {
+                    display: block;
+                    margin: 15px 0 0 224px;
+                    font-size: 9pt;
+                    color: #004b9b;
+
+                    sup {
+                        font-size: 10pt;
+                        color: #ac0912;
+                        margin-top: 15px;
+                        display: inline-block;
+                        vertical-align: top;
+                    }
+                }
+
+                & > label {
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 200px;
+                    text-align: right;
+                    margin: 0 20px 0 0;
+                    color: #505050;
+                    font-size: 10pt;
+                    line-height: 1;
+
+                    sup {
+                        color: #ac0912;
+                        font-size: 11pt;
+                        line-height: 1;
+                        margin-top: 7px;
+                        display: inline-block;
+
+                    }
+                }
+
+                input[type="text"],
+                textarea {
+                    border: 1px solid #b6b6b6;
+                    background-color: #f9f9f9;
+                    text-shadow: none;
+                    .border-radius(5px);
+                    -webkit-box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.48);
+                    -moz-box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.48);
+                    box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.48);
+                    height: 24px;
+                    color: #848484;
+                    font-size: 10pt;
+                    text-indent: 10px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    outline: 0;
+                    width: 366px;
+                    display: inline-block;
+                }
+
+                textarea {
+                    height: 114px;
+                }
+
+
+                .jq-selectbox {
+                    width: 366px;
+
+                    .jq-selectbox__select {
+                        border:1px solid #b6b6b6;
+                        background: #f9f9f9;
+                        text-shadow:none;
+                        .border-radius(5px);
+                        -webkit-box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.48);
+                        -moz-box-shadow:    0px -1px 0px 0px rgba(0, 0, 0, 0.48);
+                        box-shadow:         0px -1px 0px 0px rgba(0, 0, 0, 0.48);
+                        padding:0 35px 0 0;
+                        height: 26px;
+                        line-height: 26px;
+                        color: #848484;
+                        font-size: 10pt;
+                        text-indent: 10px;
+                        white-space: nowrap; /* Запрещаем перенос строк */
+                        overflow: hidden; /* Обрезаем все, что не помещается в область */
+                        text-overflow: ellipsis; /* Добавляем многоточие */
+                    }
+
+                    .jq-selectbox__trigger {
+                        border: 0;
+
+                        .jq-selectbox__trigger-arrow {
+                            border-top: 6px solid #000;
+                            border-right: 4.5px solid transparent;
+                            border-left: 4.5px solid transparent;
+                            top: 10px;
+                            right: 15px;
+                        }
+                    }
+
+                    .jq-selectbox__dropdown {
+                        top: 27px!important;
+                        font-size: 10pt;
+                        color: #848484;
+                    }
+                }
+
+                .check-list {
+                    display: inline-block;
+                    vertical-align: top;
+
+                    li {
+                        label {
+                            font-size: 10pt;
+                            display: inline-block;
+                            vertical-align: top;
+                            color: #004b9b;
+                            line-height: 15px;
+                            margin: 3px 0 0 3px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#contacts {
+    padding: 70px 10px 60px 10px;
+
+    #map-block {
+        position: relative;
+        padding: 142px 0 0 7px;
+
+        .contacts-tabs {
+            position: absolute;
+            top: 15px;
+            left: 0;
+
+            .contacts-tab {
+                display: none;
+
+                &.active {
+                    display: block;
+                }
+
+                h3 {
+                    margin: 0;
+                    font-size: 12pt;
+                    color: #4e4e4e;
+                    padding: 0 0 10px 0;
+                }
+
+                ul.info {
+                    width: 300px;
+
+                    li {
+                        font-size: 11pt;
+                        color: #525252;
+                        line-height: 1.2;
+                        padding-bottom: 5px;
+
+                        span {
+                            color: #818181;
+                        }
+
+                        b {
+                            font-size: 12pt;
+                            color: #4e4e4e;
+                        }
+
+                        a {
+                            color: #00adda;
+                        }
+                    }
+                }
+
+                .social {
+                    li {
+                        display: inline-block;
+                        vertical-align: top;
+                        margin-left: 3px;
+
+                        a {
+                            .sprite;
+                        }
+
+                        &.mr {
+                            margin-left: 0;
+
+                            a {
+                               .sprite-1; 
+                            }
+                        }
+
+                        &.tw {
+                            a {
+                               .sprite-2; 
+                            }
+                        }
+
+                        &.cm {
+                            a {
+                               .sprite-3; 
+                            }
+                        }
+
+                        &.fb {
+                            a {
+                               .sprite-5; 
+                            }
+                        }
+
+                        &.vk {
+                            a {
+                               .sprite-6; 
+                            }
+                        }
+
+                        &.in {
+                            a {
+                               .sprite-4; 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .marker {
+        background: url(images/marker.png);
+        width: 45px;
+        height: 70px;
+        position: absolute;
+        top: 0;
+        left: 90%;
+        .transition(0.5s,all);
+        z-index: 110;
+    }
+
+    #none {
+        position: absolute;
+        top: 0;
+        left: 90%;
+        opacity: 0;
+    }
+
+    .link-block {
+        a {
+            font-size: 10pt;
+            position: absolute;
+            font-weight: bold;
+            color: #525252;
+            text-decoration: none;
+            z-index: 100;
+
+            &.yellow {
+                color: #f3f606;
+                text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+            }
+
+            &.red {
+                color: #ff0000;
+            }
+
+        }
+
+        #aktobe {
+            top: 277px;
+            left: 228px;
+        }
+
+        #kulsare {
+            top: 370px;
+            left: 140px;
+        }
+
+        #actau {
+            top: 465px;
+            left: 80px; 
+        }
+
+        #kostanay {
+            top: 193px;
+            left: 342px;
+        }
+
+        #astana {
+            top: 244px;
+            left: 510px;
+        }
+
+        #zheskazgan {
+            top: 333px;
+            left: 480px;
+        }
+
+        #satpaev {
+            top: 344px;
+            left: 409px;
+        }
+
+        #karaganda {
+            top: 284px;
+            left: 538px; 
+        }
+
+        #kyzylorda {
+            top: 453px;
+            left: 385px;
+        }
+
+        #shymkent {
+            top: 562px;
+            left: 454px;
+        }
+
+        #almaty {
+            top: 471px;
+            left: 634px;
+        }
+
+        #balkhash {
+            top: 374px;
+            left: 633px;
+        }
+
+        #pavlodar {
+            top: 206px;
+            left: 602px;
+        }
+
+        #ust-kamenogorsk {
+            top: 282px;
+            left: 730px;
+        }
+
+        #ust-talovka {
+            top: 260px;
+            left: 730px;
+        }
+
+        #belousovka {
+            top: 233px;
+            left: 745px;
+        }
+
+        #zhezkent {
+            top: 238px;
+            left: 653px;
+        }
+
+    }
+
+    .contact-info {
+        width: 390px;
+        border-top: 2px solid #004b9b;
+        margin: 6px 0 0 0;
+        display: none;
+
+        &.active {
+            display: block;
+        }
+
+        h3 {
+            margin: 0;
+            color: #004b9b;
+            padding: 21px 0 16px 0;
+            font-size: 11pt;
+            text-transform: uppercase;
+        }
+
+        ul {
+            li {
+                font-size: 10pt;
+                color: #959595;
+
+                a {
+                    color: #00adda;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .feedback-block {
+        form {
+            h4 {
+                margin: 0;
+                color: #004b9b;
+                padding: 26px 0 11px 0;
+                font-size: 11pt;
+            }
+
+            .blue-btn {
+                margin: 12px 0 0 0;
+                padding: 0 20px;
+                float: none;
+            }
+
+            .row {
+                padding: 0 0 6px 0;
+
+                input[type="text"],
+                textarea {
+                    border: 1px solid #b6b6b6;
+                    background-color: #f9f9f9;
+                    text-shadow: none;
+                    .border-radius(5px);
+                    -webkit-box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.48);
+                    -moz-box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.48);
+                    box-shadow: 0px -1px 0px 0px rgba(0, 0, 0, 0.48);
+                    height: 24px;
+                    color: #848484;
+                    font-size: 10pt;
+                    text-indent: 10px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    outline: 0;
+                    width: 236px;
+                    display: inline-block;
+                }
+
+                textarea {
+                    height: 82px;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width:1600px) {
     #footer {
         &:before {

@@ -90,6 +90,15 @@ $(document).ready(function() {
 		$('.personal-cab-tab').removeClass('active');
 		$(personal_cab_tab).addClass('active');
 	});
+	/* -- tabs feedback -- */
+
+	$('.feedback-nav a').click(function(){
+		var feedback = $(this).data('feedback');
+
+		$(this).addClass('active').parent().siblings().find('a').removeClass('active');
+		$('.feedback-tab').removeClass('active');
+		$(feedback).addClass('active');
+	});
 
 	/* -- popup -- */
 
